@@ -1,4 +1,7 @@
-
+variable "digitalocean_token" {
+  type        = string
+  description = "Digitalocean auth token"
+}
 variable "vpc_name" {
   type        = string
   description = "Name of the VPC to create"
@@ -8,7 +11,7 @@ variable "vpc_name" {
 variable "vpc_region" {
   type        = string
   description = "Slug of the digitalocean region"
-  default     = "ams3"
+  default     = "nyc1"
 }
 
 variable "vpc_description" {
