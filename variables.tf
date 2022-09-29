@@ -5,7 +5,7 @@ variable "digitalocean_token" {
 variable "vpc_name" {
   type        = string
   description = "Name of the VPC to create"
-  default     = "my-vpc"
+  default     = "Datacenter"
 }
 
 variable "vpc_region" {
@@ -24,8 +24,8 @@ variable "project" {
   type        = map(string)
   description = "Project configuration"
   default = {
-    name        = "My_Project"
-    description = "My project"
+    name        = "Datacenter"
+    description = "My Datacenter project"
     purpose     = "Personal"
     environment = "development"
   }
